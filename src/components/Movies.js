@@ -3,7 +3,7 @@ import PropTyes from "prop-types";
 import "./Movie.css";
 import { Link } from "react-router-dom";
 
-function Movies({ id, year, title, summary, poster, genres }) {
+function Movies({ id, year, title, summary, poster, genres, runtime, rating }) {
     return (
         <Link
             to={{
@@ -13,7 +13,9 @@ function Movies({ id, year, title, summary, poster, genres }) {
                     title,
                     summary,
                     poster,
-                    genres
+                    genres,
+                    runtime,
+                    rating
                 }
             }}
         >

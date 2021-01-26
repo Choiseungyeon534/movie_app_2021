@@ -29,11 +29,11 @@ body,
 }
 
 .movies {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
     padding-top: 70px;
     width: 80%;
+    margin-top: 50px;
 }
 
